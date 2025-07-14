@@ -18,7 +18,7 @@ const Login = () => {
     return (
         <>
             <div className='flex flex-col items-center gap-5 h-full p-5'>
-                <h2 className='text-3xl font-bold mb-5 text-center'>Login to get started</h2>
+                <h2 className='text-3xl font-bold mb-5 text-center flex flex-col gap-4'>Login to get started<p className='text-xl'>Github Auth is activated for now</p></h2>
 
                 <button type="button" className="text-white text-center w-2/3 sm:w-60 md:w-100 justify-center cursor-pointer bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2">
                     <svg className="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
