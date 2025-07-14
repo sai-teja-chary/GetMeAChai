@@ -1,5 +1,5 @@
 
-# SendMeChai ☕️
+# GetMeAChai ☕️
 
 A full-stack, production-ready platform where users can send you a chai (a small tip or donation) along with a message of appreciation. Built with **Next.js**, **MongoDB**, and **Razorpay**, and deployed on **Vercel**.
 
