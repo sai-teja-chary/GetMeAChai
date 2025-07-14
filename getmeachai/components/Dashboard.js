@@ -92,14 +92,14 @@ const Dashboard = () => {
         </h1>
         <form className='lg:w-[40%] sm:w-[70%] w-full' onSubmit={handleSubmit}>
           {[
-            { label: 'Name', name: 'name' },
-            { label: 'Bio', name: 'bio' },
-            { label: 'Email', name: 'email' },
-            { label: 'Username', name: 'username' },
-            { label: 'Profile picture', name: 'profilepic' },
-            { label: 'Cover picture', name: 'coverpic' },
-            { label: 'Razorpay Id', name: 'razorpayid' },
-            { label: 'Razorpay Secret', name: 'razorpaysecret' },
+            { label: 'Name', name: 'name', type: 'text' },
+            { label: 'Bio', name: 'bio', type: 'text' },
+            { label: 'Email', name: 'email', type: 'text' },
+            { label: 'Username', name: 'username', type: 'text' },
+            { label: 'Profile picture', name: 'profilepic', type: 'text' },
+            { label: 'Cover picture', name: 'coverpic', type: 'text' },
+            { label: 'Razorpay Id', name: 'razorpayid', type: 'password' },
+            { label: 'Razorpay Secret', name: 'razorpaysecret', type: 'password' },
           ].map(({ label, name }) => (
             <div key={name} className='flex flex-col gap-2 mb-2'>
               <label htmlFor={name}>{label}</label>
@@ -108,7 +108,7 @@ const Dashboard = () => {
                 value={form[name]}
                 name={name}
                 className='h-8 rounded-xl p-4 bg-gray-400 text-black font-bold'
-                type="text"
+                type={type}
               />
             </div>
           ))}
