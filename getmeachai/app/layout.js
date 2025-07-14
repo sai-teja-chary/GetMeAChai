@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className="text-white absolute top-0 z-[-2] h-screen w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] scroll-y">
         <SessionWrapper>
           <Navbar />
-          <div className="min-h-[88.7vh]">
+          <div className="h-auto min-h-[87.5vh]">
             {children}
           </div>
           <Footer />
