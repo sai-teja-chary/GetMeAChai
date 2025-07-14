@@ -100,7 +100,7 @@ const Dashboard = () => {
             { label: 'Cover picture', name: 'coverpic', type: 'text' },
             { label: 'Razorpay Id', name: 'razorpayid', type: 'password' },
             { label: 'Razorpay Secret', name: 'razorpaysecret', type: 'password' },
-          ].map(({ label, name }) => (
+          ].map(({ label, name ,type }) => (
             <div key={name} className='flex flex-col gap-2 mb-2'>
               <label htmlFor={name}>{label}</label>
               <input
